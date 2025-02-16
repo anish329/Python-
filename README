@@ -1,0 +1,36 @@
+Stock Price Prediction Using Linear Regression
+This Python program uses NumPy, Pandas, Matplotlib, and scikit-learn to predict stock prices based on historical data from a CSV file. The model applies linear regression to identify trends over time.
+
+Features:
+Data Loading: Reads stock price data from a CSV file.
+Data Preparation: Converts dates to numerical values (days since the start) and splits data into training and test sets.
+Model Training: Uses a linear regression model to learn from the training data.
+Prediction: Predicts stock prices based on test data.
+Performance Evaluation: Calculates mean absolute error (MAE) to assess prediction accuracy.
+Visualization: Displays a scatter plot comparing actual and predicted stock prices.
+How the Code Works:
+1. load_data():
+Reads CSV data into a Pandas DataFrame.
+2. prepare_data():
+Converts date strings to datetime objects.
+Adds a numerical column for days since the first date.
+Splits data into training and test sets.
+3. train_model():
+Trains a linear regression model using the training data.
+4. predict_prices():
+Predicts stock prices using the trained model.
+5. plot_results():
+Plots training data, test data, and the predicted trend.
+6. main():
+Orchestrates the data loading, preparation, training, prediction, and visualization steps.
+Prints the Mean Absolute Error (MAE).
+File Structure:
+stock_data.csv: A CSV file containing historical stock prices with at least the columns:
+Date (e.g., 2024-01-01)
+Close (e.g., 150.23)
+Example Output:
+mathematica
+Copy
+Edit
+Mean Absolute Error: 5.32
+A scatter plot shows the training data (blue), test data (red), and the predicted trend line (green).
